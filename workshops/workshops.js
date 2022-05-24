@@ -6,6 +6,7 @@ const workshopsDiv = document.getElementById('workshops');
 checkAuth();
 
 const logoutButton = document.getElementById('logout');
+const addParticipantButton = document.getElementById('add-participant');
 
 logoutButton.addEventListener('click', () => {
     logout();
@@ -19,3 +20,6 @@ window.addEventListener('load', async () => {
     }
 });
 
+addParticipantButton.addEventListener('click', () => {
+    window.location.href = '../addparticipant/index.html';
+});

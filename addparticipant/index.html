@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/home.css">
-    <title>Workshops</title>
+    <title>Add participant</title>
 </head>
-
 <body>
     <header>
-        <button id="add-participant">Add participant</button>
+        <h1>Add a new participant</h1>
+        <button id="home">Home</button>
         <button id="logout">Logout</button>
-        <div class="gutter-right logo">
-            <img src="../assets/big-logo.png" />
-        </div>
-    </header>    
+    </header>
     <main>
-        <h1>Workshops</h1>
-        <div id="workshops">
+        <div>
+            <form id="form">
+                <label for="name">Participant name: </label>
+                <input name="name">
+                <select name="select" id="select"></select>
+                <button>Submit</button>
+            </form>
         </div>
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
-    </footer>
-    <script type="module" src="./workshops.js"></script>
+    <script type="module" src="./addparticipant.js"></script>
 </body>
-
 </html>

@@ -42,7 +42,10 @@ function checkError({ data, error }) {
 
 export async function getWorkshops() {
     const response = await client.from('workshops').select('*, participants(*)');
-    console.log(response);
     return checkError(response);
 }
 
+export async function addParticipant(participant) {
+    const response = await client.from('participants').insert(participant);
+    return checkError(response);
+}

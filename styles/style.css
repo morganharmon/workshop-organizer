@@ -106,9 +106,9 @@ footer {
   }
 
 #logout {
-    position: fixed;
-    right: 20px;
-    top: 90px;
+    height: fit-content;
+    align-self: center;
+    margin: 20px;
 }
 
 .auth-main {
