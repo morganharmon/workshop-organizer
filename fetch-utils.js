@@ -49,3 +49,8 @@ export async function addParticipant(participant) {
     const response = await client.from('participants').insert(participant);
     return checkError(response);
 }
+
+export async function deleteParticipant(id) {
+    const response = await client.from('participants').delete().eq('id', id);
+    return checkError(response);
+}

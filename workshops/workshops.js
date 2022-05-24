@@ -12,14 +12,17 @@ logoutButton.addEventListener('click', () => {
     logout();
 });
 
-window.addEventListener('load', async () => {
+export async function displayWorkshops() {
+    workshopsDiv.textContent = '';
     const workshops = await getWorkshops();
     for (let workshop of workshops) {
         const render = renderWorkshop(workshop);
         workshopsDiv.append(render);
     }
-});
+}
 
 addParticipantButton.addEventListener('click', () => {
     window.location.href = '../addparticipant/index.html';
 });
+
+displayWorkshops();
