@@ -1,7 +1,7 @@
 /* add home page styles here */
 
 .render:hover {
-    cursor: pointer;
+    cursor: grab;
 }
 
 .render {
@@ -13,6 +13,7 @@ padding: 10px;
     border: solid 1px lightblue;
     margin: 10px;
     min-height: 100px;
+    padding: 10px;
 }
 
 .hide {
