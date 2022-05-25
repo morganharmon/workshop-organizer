@@ -71,7 +71,7 @@ header img {
 }
 
 p {
-    margin: var(--gutter);
+    margin: 10px;
 }
   
 footer {
@@ -105,10 +105,12 @@ footer {
 
   }
 
-#logout {
-    position: fixed;
-    right: 20px;
-    top: 90px;
+button {
+    height: fit-content;
+    align-self: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .auth-main {
