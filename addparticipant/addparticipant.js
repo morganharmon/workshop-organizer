@@ -16,8 +16,8 @@ logoutButton.addEventListener('click', async () => {
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = new FormData(form);
-    await addParticipant({ name: data.get('name'), workshop_id: data.get('select') });
-    form.requestFullscreen();
+    await addParticipant({ name: data.get('name'), contact_info: data.get('contact'), workshop_id: data.get('select') });
+    form.reset();
     window.location.href = '/';
 });
 

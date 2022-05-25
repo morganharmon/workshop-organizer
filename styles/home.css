@@ -1,1 +1,16 @@
 /* add home page styles here */
+
+.render:hover {
+    cursor: pointer;
+}
+
+.render {
+border: solid 1px pink;
+padding: 10px;
+}
+
+.workshop {
+    border: solid 1px lightblue;
+    margin: 10px;
+    min-height: 100px;
+}
