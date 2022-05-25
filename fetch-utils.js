@@ -54,3 +54,8 @@ export async function deleteParticipant(id) {
     const response = await client.from('participants').delete().eq('id', id);
     return checkError(response);
 }
+
+export async function moveParticipant(participant) {
+    const response = await client.from('participants').update({ workshop_id: participant.workshop_id }).eq('id', participant.id);
+    return checkError(response);
+}
